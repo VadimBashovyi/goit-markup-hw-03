@@ -62,8 +62,6 @@ img {
 .navigation-logotip {
   display: flex;
   align-items: center;
-  margin-top: 25px;
-  margin-bottom: 24px;
 }
 /* header */
 
@@ -76,9 +74,6 @@ img {
 a {
   text-decoration: none;
 }
-.logotyp-text {
-  margin-right: 93px;
-}
 .logotype {
   font-family: 'Raleway', 'Roboto';
   font-weight: 700;
@@ -87,6 +82,7 @@ a {
   letter-spacing: 0.03em;
   display: flex;
   align-items: center;
+  margin-right: 93px;
 }
 .logotype:hover {
   color: var(--accent);
@@ -123,6 +119,8 @@ a {
   margin-left: auto;
 }
 .navigation-item-link {
+  display: block;
+  padding: 32px 0;
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
@@ -141,6 +139,8 @@ a {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--secondary-color);
+  display: block;
+  padding: 32px 0;
 }
 .navigation-contacts-tel-item {
   font-family: var(--main-font);
@@ -149,6 +149,8 @@ a {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--secondary-color);
+  display: block;
+  padding: 32px 0;
 }
 .navigation-contacts :hover,
 .navigation-contacts :focus {
@@ -177,10 +179,9 @@ a {
   margin-bottom: 30px;
   background: var(--color-hero);
   color: var(--color-white);
-}
-.container-title {
-  padding-left: 250px;
-  padding-right: 250px;
+  max-width: 696px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .about-btn {
@@ -207,7 +208,6 @@ a {
 /* feature */
 .feature-List {
   flex-basis: calc((100% - 3 * 30px) / 4);
-  margin-left: 30px;
 }
 . .feature-item-title {
   margin-bottom: 10px;
@@ -215,7 +215,6 @@ a {
 }
 .feature-sections {
   padding-top: 94px;
-  padding-bottom: 94px;
 }
 .feature-box {
   display: flex;
@@ -239,9 +238,18 @@ a {
 }
 /* feature  end*/
 /* component */
-.heading {
-  visibility: hidden;
+.visually-hidden {
   position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 button {
   font-family: inherit;
@@ -388,6 +396,7 @@ address {
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--secondary-color);
+  margin-top: 4px;
 }
 h3 {
   color: var(--main-color);

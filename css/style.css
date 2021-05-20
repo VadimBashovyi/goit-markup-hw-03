@@ -350,13 +350,15 @@ address {
 }
 .address-link:not(:last-child) {
   margin-bottom: 9px;
-  margin-top: 9px;
 }
 .address-link {
   color: rgba(255, 255, 255, 0.6);
 }
 .address {
   margin-top: 20px;
+}
+.address-list {
+  margin-top: 9px;
 }
 
 /* footer end   */

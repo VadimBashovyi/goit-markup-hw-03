@@ -206,8 +206,11 @@ a {
 /* HERO  end */
 
 /* feature */
-.feature-List {
+.feature-list {
   flex-basis: calc((100% - 3 * 30px) / 4);
+}
+.feature-list:not(:first-child) {
+  margin-left: 30px;
 }
 . .feature-item-title {
   margin-bottom: 10px;
@@ -234,7 +237,7 @@ a {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  padding-top: 10px;
+  margin-top: 10px;
 }
 /* feature  end*/
 /* component */
@@ -347,10 +350,15 @@ address {
 }
 .address-link:not(:last-child) {
   margin-bottom: 9px;
+  margin-top: 9px;
 }
-.address-text {
+.address-link {
   color: rgba(255, 255, 255, 0.6);
 }
+.address {
+  margin-top: 20px;
+}
+
 /* footer end   */
 
 /*-------------------------------- PORTFOLIO  -------------------------------- */
